@@ -1,0 +1,261 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: var(--main-color);
+}
+
+:root {
+  --main-color: #243dae;
+  --second-color: #6a7fe0;
+  --accent-color: #e06a80;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.text-second {
+  color: var(--second-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.bg-second {
+  background-color: var(--second-color);
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
+
+.btn-login {
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.btnlogin:hover {
+  background-color: var(--accent-color);
+
+}
+
+.titulo {
+  font-size: large;
+}
+
+.icon {
+  color: var(--accent-color);
+}
+
+.icon:hover {
+  color: white;
+  transition: 0.70s;
+  transform: rotate(30deg);
+}
+
+/* cards */
+/* .card-section{
+  height: 250px;
+  width: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px, 5px 8px #243dae;
+  position: relative;
+  overflow: hidden;
+}
+.card-section::after{
+position:absolute;
+content: '';
+height: 100%;
+width: 100%;
+background-color:#e06a80;
+left: 0;
+top: -100%;
+transition: 0.4s;
+}
+.card-section:hover::after{
+  top: 0;
+}
+.card-inner{
+  position: absolute;
+  bottom: -100%;
+  left: 30%;
+  transition: 0.4s;
+}
+.card-section:hover .card-inner{
+  bottom: 0;
+  opacity: 1;
+} */
+
+.btn-features{
+  height: 35px;
+  width: 55px;
+  border: 1px solid var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 40px;
+}
+
+.btn-features:hover{
+border:  1px dashed white;
+        bottom: -1;
+        left: -1;
+        right:  -1;
+        top: -1;
+        z-index: -1;
+}
+
+
+
+/* SWIPER */
+.swiper-container {
+  width: 50%;
+  height: 50%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+@media (max-width: 760px) {
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
+}
+
+.swiper-button-next {
+  color: white;
+  opacity: 0.5;
+}
+
+.swiper-button-prev {
+  color: white;
+  opacity: 0.5;
+}
+
+.swiper-button-next:hover {
+  color: var(--accent-color);
+  opacity: 1;
+}
+
+.swiper-button-prev:hover {
+  color: var(--accent-color);
+  opacity: 1;
+}
+
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:var(--main-color);
+  text-decoration: none;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:white;
+  
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color: var(--main-color);
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color: var(--main-color);
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
