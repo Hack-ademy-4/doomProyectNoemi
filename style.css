@@ -47,8 +47,9 @@ body {
   border-radius: 16px;
 }
 
-.btnlogin:hover {
-  background-color: var(--accent-color);
+.btn-login:hover {
+  background-color:var(--accent-color);
+  color: var(--main-color) ;
 
 }
 
@@ -124,15 +125,16 @@ border:  1px dashed white;
 
 
 /* SWIPER */
+
 .swiper-container {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: transparent;
+  background: var(--second-color);
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -147,6 +149,13 @@ border:  1px dashed white;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
@@ -241,7 +250,7 @@ border:  1px dashed white;
   -o-transition:all .2s linear;
   transition:all .2s linear
 }
-.}
+
 .social-icons a.linkedin:hover
 {
   background-color:#007bb6
